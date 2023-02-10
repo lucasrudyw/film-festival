@@ -1,0 +1,168 @@
+/* --- GLOBAL STYLES --- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+/* --- TYPOGRAPHY --- */
+
+h1 {
+  font-weight: bold;
+}
+
+.intro-section p {
+  text-transform: uppercase;
+}
+
+.sponsor-text {
+  font-weight: 300;
+  border-bottom: 3px solid #3EC0A6;
+}
+
+.subheading {
+  order: -1;
+  border-top: 3px solid #3EC0A6;
+  font-size: 0.8em;
+  padding: 0.3em;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.125em auto;
+}
+
+.description {
+  margin: 0 auto 1em;
+  padding: 0 1em;
+  text-align: center;
+  max-width: 450px;
+  margin-bottom: 1.25em;
+}
+
+.disclaimer {
+  color: rgb(136, 136, 136);
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+/* --- LAYOUT --- */
+
+.intro-section {
+  background: url("film-set.jpg"), #3EC0A6;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.25em;
+  max-width: 450px;
+}
+
+form p {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.form-text-input,
+.please-specify-input {
+  font-family: inherit;
+  margin: 0.3em auto;
+  width: 90%;
+  max-width: 225px;
+  padding: 0.3em;
+}
+
+.form-text-input:focus,
+.please-specify-input:focus {
+  outline: none;
+}
+
+.please-specify-input {
+  display: block;
+  margin: 0.5em auto 0;
+  padding: 0.2em;
+}
+
+.btn {
+  display: block;
+  border: none;
+  padding: 0.8em;
+  border-radius: 4px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.btn-register {
+  background-color: #3EC0A6;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 2em auto 0.5em;
+  transition: background-color 0.15s;
+}
+
+.btn-register:hover {
+  background-color: #2bab91;
+}
+
+/* --- PLEASE SPECIFY INPUT */
+
+/* --- MEDIA QUERIES --- */
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  .intro-section,
+  .info-section {
+    width: 50vw;
+    min-height: 100vh;
+  }
+
+  .intro-section {
+    background-position-x: right;
+    background-position-y: top;
+  }
+
+  .intro-section h1 {
+    font-size: 3.5rem;
+    padding-left: 1em;
+  }
+
+  .subheading,
+  .sponsor-text {
+    font-size: 1.125rem;
+  }
+
+  .info-section {
+    justify-content: center;
+  }
+
+  .info-section h2 {
+    font-size: 1.6rem;
+  }
+}
